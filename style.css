@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f242d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 27px;
+    cursor: default;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: cyan;
+}
+
+/* main css start here */
+
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 630px;
+    /* margin-top: 50px; */
+    border: 2px solid red;
+}
+
+.info {
+    width: 550px;
+    padding: 30px;
+}
+
+.info>h3 {
+    font-size: 1.2rem;
+}
+
+#s-info {
+    margin-bottom: 20px;
+}
+
+.info i {
+    color: cyan;
+    font-size: 500;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    border: 2px solid cyan;
+    color: cyan;
+    height: 35px;
+    width: 35px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.media span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .9s;
+}
+
+.media:hover {
+    box-shadow: 0 0 20px cyan;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+.btn input {
+    width: 180px;
+    height: 30px;
+    background-color: cyan;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn input:hover {
+    box-shadow: 0 0 15px cyan;
+    transform: scale(1.05);
+}
+
+
+
+.photo {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, cyan, purple, cyan);
+    box-shadow: 0 0 80px cyan;
+}
+
+.inner {
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px purple;
+}
+
+.inner>img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+/* about section css start */
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 120px; */
+    /* padding: 50px; */
+    height: 630px;
+    border: 2px solid yellow;
+}
+.a-info{
+    width: 400px;
+}
+.a-info>h1{
+    font-size: 2rem;
+}
+.a-info b{
+    color: cyan;
+}
+.a-info>h3{
+    margin: 10px 0;
+}
+.a-info>p{
+    margin-bottom: 20px;
+}
+
+/* skill selction css start here */
+
+
+.skill{
+    height: 630px;
+    border: 2px solid green;
+}
+
+/* project section css start here */
+
+.project{
+    height: 630px;
+    border: 2px solid blue;
+}
+
+/* contact section css start here */
+
+.contact{
+    height: 630px;
+    border: 2px solid orange;
+}
