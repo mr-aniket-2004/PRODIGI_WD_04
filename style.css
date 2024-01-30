@@ -20,6 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: #4b35883f;
 }
 
 .logo {
@@ -52,7 +53,6 @@ body {
     align-items: center;
     height: 630px;
     /* margin-top: 50px; */
-    border: 2px solid red;
 }
 
 .info {
@@ -76,6 +76,7 @@ body {
 .social {
     display: flex;
     list-style: none;
+    cursor: pointer;
 }
 
 .media {
@@ -119,6 +120,7 @@ body {
     border: none;
     border-radius: 30px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btn input:hover {
@@ -164,10 +166,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-top: 120px; */
-    /* padding: 50px; */
     height: 630px;
-    border: 2px solid yellow;
+   
 }
 
 .a-info {
@@ -195,7 +195,8 @@ body {
 
 .mh-skills {
     height: 630px;
-    border: 2px solid green;
+    margin-top: 50px;
+    padding: 100px;
 }
 
 .container1 {
@@ -444,7 +445,8 @@ body {
 
 .project {
     height: 630px;
-    border: 2px solid blue;
+    margin-top: 70px;
+    padding-top: 100px;
 }
 
 .p-name{
@@ -488,21 +490,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border-radius: 30px;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     top: 0;
     left: 0;
     position: relative;
-    transform: translatey(-110%);
-    /* background-color: rgba(0, 255, 255, 0.255); */
+    transform: translatey(-102%);
+    background-color: rgba(201, 135, 14, 0.255);
     opacity: 0;
     transition: all .6s ;
 }
 .p-info:hover{
     opacity: 1;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -516,5 +519,121 @@ body {
 
 .contact {
     height: 630px;
-    border: 2px solid orange;
+}
+
+.contact{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-me{
+    width: 40%;
+    padding: 20px;
+}
+.contact-me>h2>span{
+    color: cyan;
+}
+.contact-me>h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-me>h3{
+    margin-bottom: 10px;
+}
+.contact-me>p{
+    margin-bottom: 20px;
+}
+.email{
+    display:flex;
+    margin-bottom: 10px;
+}
+.icon{
+    color: white;
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+.mobile{
+    display:flex;
+    margin-bottom: 10px;
+}
+.email>p>a{
+    color: cyan;
+    text-decoration: none;
+}
+.mobile>p{
+    color: cyan;
+    cursor: pointer;
+}
+
+
+
+
+.contact-form{
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    padding-top: 30px;
+}
+.contact-form>input{
+    width:80%;
+    outline: none;
+    border: none;
+    margin-bottom: 8px;
+    background-color: rgba(64, 64, 64, 0.215);
+    color: white;
+    border-radius: 5px;
+}
+#name{
+    height: 40px;
+}
+#email{
+    height: 40px;
+}
+#subject{
+    height: 40px;
+}
+#mess{
+    height: 120px;
+}
+#sub-btn{
+    margin-top: 20px;
+    height: 40px;
+    background-color:#00F5FF;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s; 
+    cursor: pointer;
+}
+#sub-btn:hover{
+    box-shadow: 0 0 15px rgba(85, 75, 213, 0.607);
+    transform: scale(1.02);
+}
+
+.footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b35883f;
+}
+.footer>p{
+    font-family: 'poppins'sans-serif;
+    font-weight: 500;
+}
+
+
+
+.top-icon{
+    position: absolute;
+    right: 0;
+    color: cyan;
+    font-size: 2.5rem;
+}
+.top-icon a:hover{
+    color: cyan;
 }
