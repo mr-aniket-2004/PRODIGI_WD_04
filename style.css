@@ -19,6 +19,7 @@ body {
     padding: 10px 10%;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -158,7 +159,7 @@ body {
 
 /* about section css start */
 
-.about{
+.about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -168,40 +169,352 @@ body {
     height: 630px;
     border: 2px solid yellow;
 }
-.a-info{
+
+.a-info {
     width: 400px;
 }
-.a-info>h1{
+
+.a-info>h1 {
     font-size: 2rem;
 }
-.a-info b{
+
+.a-info b {
     color: cyan;
 }
-.a-info>h3{
+
+.a-info>h3 {
     margin: 10px 0;
 }
-.a-info>p{
+
+.a-info>p {
     margin-bottom: 20px;
 }
 
 /* skill selction css start here */
 
 
-.skill{
+.mh-skills {
     height: 630px;
     border: 2px solid green;
 }
 
+.container1 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.mh-skills .mh-professional-skill {
+    /* padding-right: 40px; */
+    color: white;
+}
+
+.title1{
+
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 36px;
+    font-family: 'poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.mh-professional-skills {
+    padding-left: 20px;
+}
+
+.mh-professional-skills h3 {
+    font-size: 30px;
+    line-height: 40px;
+    /* text-align: center; */
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: 'poppins', sans-serif;
+}
+
+.mh-professional-progress li {
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.mh-progress {
+    margin-bottom: 10px;
+    font: 900 1.14285/1;
+    color: white;
+}
+
+.wrapper {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .card {
+    /* background: #fff; */
+    /* width: calc(28% - 20px); */
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .card .circle {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.card .circle .box,
+.card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.card .circle .box {
+    height: 100%;
+    width: 100%;
+    /* background: #fff; */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all .02s;
+}
+
+.card .circle:hover .box {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.card .circle .box span,
+.wrapper .card .text {
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+}
+
+.circle .box span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.card .circle:hover .box span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.card .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapper {
+        max-width: 700px;
+    }
+
+    .wrapper .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 505px) {
+    .wrapper {
+        max-width: 500px;
+    }
+
+    .wrapper .card {
+        width: 100%;
+    }
+}
+
+.container {
+    /* position: relative; */
+    max-width: 600px;
+    width: 600px;
+    /* background: #fff; */
+    margin: 150px 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+}
+
+.container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.css {
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.javascript {
+    width: 50%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.nodejs {
+    width: 55%;
+    animation-delay: 0.3s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+
 /* project section css start here */
 
-.project{
+.project {
     height: 630px;
     border: 2px solid blue;
 }
 
+.p-name{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+}
+
+.projects{
+    height: 500px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items{
+    width: 350px;
+    height: 350px;
+    /* overflow: hidden; */
+    transition: all .3s ;
+   
+}
+.items:hover{
+    transform: scale(1.03);
+}
+.img{
+    height: 350px;
+    width: 350px;
+    
+}
+
+.img>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.p-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: translatey(-110%);
+    /* background-color: rgba(0, 255, 255, 0.255); */
+    opacity: 0;
+    transition: all .6s ;
+}
+.p-info:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
 /* contact section css start here */
 
-.contact{
+.contact {
     height: 630px;
     border: 2px solid orange;
 }

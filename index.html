@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#skill">Skills</a>
+            <a href="#mh-skills">Skills</a>
             <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -25,7 +27,9 @@
             <h3>Hello, It's Me</h3>
             <h1>Aniket Chandiwade</h1>
             <h3 id="s-info">And I'm a <i>Web developer</i></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur et aliquid delectus? Perferendis numquam accusamus enim ab veritatis adipisci obcaecati recusandae voluptate qui expedita. Adipisci ipsa earum aut facere.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur et aliquid delectus?
+                Perferendis numquam accusamus enim ab veritatis adipisci obcaecati recusandae voluptate qui expedita.
+                Adipisci ipsa earum aut facere.</p>
             <ul class="social">
                 <li class="media">
                     <span><ion-icon name="logo-github"></ion-icon></span>
@@ -63,19 +67,180 @@
             <h3>
                 Web Developer !
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa laborum ad necessitatibus. Veritatis veniam unde optio sunt praesentium non, nobis accusamus impedit quasi blanditiis corporis eum ex expedita repudiandae harum ipsum provident distinctio minima id. Esse libero iste, maiores dolorum dolorem officiis totam, cumque voluptatum ratione beatae temporibus reiciendis laborum suscipit veritatis ut illum, voluptatem minus commodi expedita id?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa laborum ad necessitatibus.
+                Veritatis veniam unde optio sunt praesentium non, nobis accusamus impedit quasi blanditiis corporis eum
+                ex expedita repudiandae harum ipsum provident distinctio minima id. Esse libero iste, maiores dolorum
+                dolorem officiis totam, cumque voluptatum ratione beatae temporibus reiciendis laborum suscipit
+                veritatis ut illum, voluptatem minus commodi expedita id?</p>
             <div class="btn">
                 <input type="button" value="More about Me">
             </div>
         </div>
     </section>
 
-    <section class="skill" id="skill">
+    <section class="mh-skills" id="mh-skills">
 
+        <div class="container1">
+            <div class="row">
+                <h2 class="title1">
+                    Technical Skills
+                </h2>
+                <div class="container">
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per html">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per javascript">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Python</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per nodejs">
+                                <span class="tooltip">55%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="mh-professional-skills">
+                    <h3>Professional Skills</h3>
+                    <ul class="mh-professional-progress">
+                        <li>
+                            <div class="wrapper">
+                                <div class="card">
+                                    <div class="circle">
+                                        <div class="bar"></div>
+                                        <div class="box"><span></span></div>
+                                    </div>
+                                    <div class="text">Creativity</div>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="wrapper">
+                                <div class="card css">
+                                    <div class="circle">
+                                        <div class="bar"></div>
+                                        <div class="box"><span></span></div>
+                                    </div>
+                                    <div class="text">Problem Solving</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper">
+                                <div class="card js">
+                                    <div class="circle">
+                                        <div class="bar"></div>
+                                        <div class="box"><span></span></div>
+                                    </div>
+                                    <div class="text">Communication</div>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="wrapper">
+                                <div class="card python">
+                                    <div class="circle">
+                                        <div class="bar"></div>
+                                        <div class="box"><span></span></div>
+                                    </div>
+                                    <div class="text">Team Work</div>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
     </section>
 
 
     <section class="project" id="project">
+
+        <h1 class="p-name">
+            My Lastest Work
+        </h1>
+        <div class="project-list">
+            <ul class="projects">
+                <li class="items">
+                    <div class="img">
+                        <img src="photo/project1.png" alt="">
+
+                        <div class="p-info">
+                            <div class="temp">
+
+                                <h3>Responsive Landing Page</h3>
+                                <p> I have built a Responsive Landing webpage that uses html,css,javascript.I have
+                                    Create an
+                                    interactive navigation menu that changes color or style when hovering over a menu
+                                    item.
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="img">
+                        <img src="photo/project2.png" alt="">
+
+                        <div class="p-info">
+                            <div class="temp">
+                                <h3>Stopwatch Web Application</h3>
+                                <p>I have built a stopwatch web apllication that uses html,css,javascript.I have
+                                    implemented
+                                    functions for starting ,pausing and resetting stopwatch along with tracking and
+                                    displaying
+                                    lap times enabling users to accurately measure and recors time intervals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="img">
+                        <img src="photo/project3.png" alt="">
+
+                        <div class="p-info">
+                            <div class="temp">
+                                <h3>Tic Tac Tao </h3>
+                                <p> I have built a Tic Tac Tao game that uses html,css, javascript. I implemented
+                                    functions
+                                    to handle
+                                    users clicks, track game state, and check the winning conditions. With these
+                                    technologies and
+                                    functionalities, useres can play with AI and play against each other ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
     </section>
 
@@ -84,9 +249,31 @@
 
     </section>
 
-
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.95,
+            fill: { gradient: ['#a445b2', '#fa4299'] }
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+            function (event, progress, stepValue) {
+                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".css .bar").circleProgress({
+            value: 0.80
+        });
+        $(".js .bar").circleProgress({
+            value: 0.65
+        });
+        $(".python .bar").circleProgress({
+            value: 0.85
+        });
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 </body>
 
 </html>
