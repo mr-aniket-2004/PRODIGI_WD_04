@@ -98,6 +98,12 @@ body {
     align-items: center;
     transition: all .9s;
 }
+.media span a{
+    color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .media:hover {
     box-shadow: 0 0 20px cyan;
